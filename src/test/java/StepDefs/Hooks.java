@@ -10,6 +10,8 @@ public class Hooks {
     public void setUp() {
         // Initialize WebDriver before each scenario
         DriverFactory.getDriver();
+
+
         System.out.println("Browser launched for scenario");
     }
 
@@ -17,6 +19,10 @@ public class Hooks {
     public void tearDown() {
         // Close browser after all scenarios
         DriverFactory.quitDriver();
+
+
+
+
         System.out.println("Browser closed after scenario");
     }
 }
